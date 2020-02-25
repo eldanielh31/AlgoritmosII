@@ -9,4 +9,10 @@
 /home/daniel/CLionProjects/AlgoritmosII/Proyecto 1/main.cpp
 iostream
 -
+arpa/inet.h
+-
+sys/socket.h
+-
+stdio.h
+-
 

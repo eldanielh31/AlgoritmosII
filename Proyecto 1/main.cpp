@@ -23,8 +23,7 @@ int main() {
     listen(servidor,100);
 
 
-    int Hola;
-    std::cin>> Hola;
+    for(;;);
 
     return 0;
 }
