@@ -12,9 +12,19 @@ int main() {
 
     int servidor = socket(AF_INET, SOCK_STREAM, 0);
 
-    if (bind (servidor, (void*) &direccionServidor, sizeof(direccionServidor)) != 0 )
+    if (bind(servidor, reinterpret_cast<const sockaddr *>(&direccionServidor), sizeof(direccionServidor)) != 0 ){
+
+        perror("Error en el bind.");
+        return 1;
+
+    }
+
+    printf("Toy escuchando\n");
+    listen(servidor,100);
 
 
+    int Hola;
+    std::cin>> Hola;
 
     return 0;
 }
