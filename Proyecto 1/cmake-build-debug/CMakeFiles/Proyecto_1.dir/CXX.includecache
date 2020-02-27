@@ -11,6 +11,10 @@ arpa/inet.h
 -
 sys/socket.h
 -
+cstdio
+-
 stdio.h
+-
+cstdlib
 -
 

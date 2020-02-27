@@ -1,6 +1,8 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
+#include <cstdio>
 #include <stdio.h>
+#include <cstdlib>
 
 int main() {
 
@@ -10,6 +12,9 @@ int main() {
     direccionServidor.sin_port = htons(8080);
 
     int servidor = socket(AF_INET, SOCK_STREAM, 0);
+
+    int activado = 1;
+    setsockopt(servidor, SOL_SOCKET, SO_REUSEADDR, &activado, sizeof(activado));
 
     if (bind(servidor, reinterpret_cast<const sockaddr *>(&direccionServidor), sizeof(direccionServidor)) != 0 ){
 
@@ -21,8 +26,28 @@ int main() {
     printf("Toy escuchando\n");
     listen(servidor,100);
 
+    //--------------------------------------------------------------------------------------
 
-    for(;;);
+    struct sockaddr_in direccionCliente;
+    unsigned int tamanoDireccion;
+    int cliente = accept(servidor, reinterpret_cast<sockaddr *>(&direccionCliente), &tamanoDireccion);
+
+    printf("Tengo conexion en %d!!\n", cliente);
+    send(cliente,"Hola perro\n", 11, 0);
+
+    //-------------------------------------------------------------------------------------
+
+    char* buffer = static_cast<char *> (malloc(5));
+
+    int bytesRecibidos = recv(cliente, buffer, 4, 0);
+    if (bytesRecibidos < 0) {
+        perror("Desconectado.");
+        return 1;
+    }
+    buffer [bytesRecibidos] = '\0';
+    printf("Llegaron %d bytes con %s", bytesRecibidos, buffer);
+
+    free(buffer);
 
     return 0;
 }
