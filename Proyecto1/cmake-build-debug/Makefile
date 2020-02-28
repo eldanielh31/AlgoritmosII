@@ -48,10 +48,10 @@ RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/daniel/CLionProjects/AlgoritmosII/Proyecto 1"
+CMAKE_SOURCE_DIR = /home/daniel/CLionProjects/AlgoritmosII/Proyecto1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/daniel/CLionProjects/AlgoritmosII/Proyecto 1/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/daniel/CLionProjects/AlgoritmosII/Proyecto 1/cmake-build-debug/CMakeFiles" "/home/daniel/CLionProjects/AlgoritmosII/Proyecto 1/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/daniel/CLionProjects/AlgoritmosII/Proyecto 1/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ Proyecto_1/fast:
 	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/build
 .PHONY : Proyecto_1/fast
 
+cliente.o: cliente.cpp.o
+
+.PHONY : cliente.o
+
+# target to build an object file
+cliente.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/cliente.cpp.o
+.PHONY : cliente.cpp.o
+
+cliente.i: cliente.cpp.i
+
+.PHONY : cliente.i
+
+# target to preprocess a source file
+cliente.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/cliente.cpp.i
+.PHONY : cliente.cpp.i
+
+cliente.s: cliente.cpp.s
+
+.PHONY : cliente.s
+
+# target to generate assembly for a file
+cliente.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/cliente.cpp.s
+.PHONY : cliente.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Proyecto_1"
 	@echo "... edit_cache"
+	@echo "... cliente.o"
+	@echo "... cliente.i"
+	@echo "... cliente.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,12 +1,11 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <cstdio>
-#include <stdio.h>
 #include <cstdlib>
 
 int main() {
 
-    struct sockaddr_in direccionServidor;
+    struct sockaddr_in direccionServidor{};
     direccionServidor.sin_family = AF_INET;
     direccionServidor.sin_addr.s_addr = INADDR_ANY;
     direccionServidor.sin_port = htons(8080);
@@ -28,7 +27,7 @@ int main() {
 
     //--------------------------------------------------------------------------------------
 
-    struct sockaddr_in direccionCliente;
+    struct sockaddr_in direccionCliente{};
     unsigned int tamanoDireccion;
     int cliente = accept(servidor, reinterpret_cast<sockaddr *>(&direccionCliente), &tamanoDireccion);
 
@@ -37,15 +36,17 @@ int main() {
 
     //-------------------------------------------------------------------------------------
 
-    char* buffer = static_cast<char *> (malloc(5));
+    char* buffer = static_cast<char *> (malloc(1000));
 
-    int bytesRecibidos = recv(cliente, buffer, 4, 0);
-    if (bytesRecibidos < 0) {
-        perror("Desconectado.");
-        return 1;
+    while(true) {
+        int bytesRecibidos = recv(cliente, buffer, 1000, 0);
+        if (bytesRecibidos <= 0) {
+            perror("Desconectado.");
+            return 1;
+        }
+        buffer[bytesRecibidos] = '\0';
+        printf("Llegaron %d bytes con %s", bytesRecibidos, buffer);
     }
-    buffer [bytesRecibidos] = '\0';
-    printf("Llegaron %d bytes con %s", bytesRecibidos, buffer);
 
     free(buffer);
 
