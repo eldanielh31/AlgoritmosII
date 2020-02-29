@@ -123,6 +123,33 @@ Proyecto_1/fast:
 	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/build
 .PHONY : Proyecto_1/fast
 
+Grafo.o: Grafo.cpp.o
+
+.PHONY : Grafo.o
+
+# target to build an object file
+Grafo.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/Grafo.cpp.o
+.PHONY : Grafo.cpp.o
+
+Grafo.i: Grafo.cpp.i
+
+.PHONY : Grafo.i
+
+# target to preprocess a source file
+Grafo.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/Grafo.cpp.i
+.PHONY : Grafo.cpp.i
+
+Grafo.s: Grafo.cpp.s
+
+.PHONY : Grafo.s
+
+# target to generate assembly for a file
+Grafo.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/Grafo.cpp.s
+.PHONY : Grafo.cpp.s
+
 cliente.o: cliente.cpp.o
 
 .PHONY : cliente.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Proyecto_1"
 	@echo "... edit_cache"
+	@echo "... Grafo.o"
+	@echo "... Grafo.i"
+	@echo "... Grafo.s"
 	@echo "... cliente.o"
 	@echo "... cliente.i"
 	@echo "... cliente.s"
