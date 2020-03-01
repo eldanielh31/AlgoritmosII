@@ -45,7 +45,7 @@ int main() {
             return 1;
         }
         buffer[bytesRecibidos] = '\0';
-        printf("Llegaron %d bytes con %s\n", bytesRecibidos, buffer);
+        printf("Llegaron %d bytes con %s \n", bytesRecibidos, buffer);
     }
 
     free(buffer);

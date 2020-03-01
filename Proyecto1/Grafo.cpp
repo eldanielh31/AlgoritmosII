@@ -2,11 +2,6 @@
 // Created by daniel on 29/2/20.
 //
 
-//============================================================================
-// Name        : Dijkstra.cpp
-// Author      : Villalba Caceres Vicente Javier
-// Copyright   : Algoritmo de Dijkstra - Camino Mas Corto
-//============================================================================
 
 #include <iostream>
 #include <queue>
@@ -15,7 +10,6 @@
 #define oo 0x3f3f3f3f // Nuestro valor infinito.
 
 using namespace std;
-
 
 struct Edge
 {
