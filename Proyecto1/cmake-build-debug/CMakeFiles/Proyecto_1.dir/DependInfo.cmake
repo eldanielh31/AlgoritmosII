@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/Grafo.cpp" "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto_1.dir/Grafo.cpp.o"
+  "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/PruebaJSON.cpp" "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.o"
   "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cliente.cpp" "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto_1.dir/cliente.cpp.o"
   "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/main.cpp" "/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto_1.dir/main.cpp.o"
   )

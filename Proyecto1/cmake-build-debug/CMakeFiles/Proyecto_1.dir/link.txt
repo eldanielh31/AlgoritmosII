@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Proyecto_1.dir/main.cpp.o CMakeFiles/Proyecto_1.dir/cliente.cpp.o CMakeFiles/Proyecto_1.dir/Grafo.cpp.o  -o Proyecto_1 
+/usr/bin/c++  -g   CMakeFiles/Proyecto_1.dir/main.cpp.o CMakeFiles/Proyecto_1.dir/cliente.cpp.o CMakeFiles/Proyecto_1.dir/Grafo.cpp.o CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.o  -o Proyecto_1 

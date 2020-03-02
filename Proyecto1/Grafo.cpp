@@ -2,7 +2,6 @@
 // Created by daniel on 29/2/20.
 //
 
-
 #include <iostream>
 #include <queue>
 #include <vector>
@@ -67,12 +66,11 @@ int algoritmo(const int begin, const int end, const Graph graph)
     return -1; // Si no se puede llegar al destino, retornar -1.
 }
 
-struct Programa
-{
+struct Programa{
     int V, E;
     int comienzo, fin;
-    void definirGrafo(Graph& graph)
-    {
+    void definirGrafo(Graph &graph){
+
         cout << "Ingrese Cantidad de Vertices: " << endl;
         cin >> V;
         cout << "Ingrese Cantidad de Aristas: " << endl;
@@ -80,11 +78,12 @@ struct Programa
 
         graph.V = V;
         graph.E = E;
+
     }
-    void cargarGrafo(Graph & graph)
-    {
-        for (int i = 0; i < E; ++i)
-        {
+    void cargarGrafo(Graph &graph){
+
+        for (int i = 0; i < E; ++i){
+
             int Origen, Destino, Peso;
             cout << "Ingrese Origen: " << endl;
             cin >> Origen;
@@ -94,43 +93,18 @@ struct Programa
             cin >> Peso;
 
             // Insertamos la arista dos veces, ya que nuestro grafo es un grafo no dirigido.
-            graph.G[Origen].push_back(Edge(Destino, Peso));
-            graph.G[Destino].push_back(Edge(Origen, Peso));
+            graph.G[Origen].emplace_back(Destino, Peso);
+            graph.G[Destino].emplace_back(Origen, Peso);
         }
     }
-    void Dijkstra(Graph graph)
-    {
+    void Dijkstra(Graph graph){
+        
         cout << "Ingrese Vertice Inicial: " << endl;
         cin >> comienzo;
         cout << "Ingrese Vertice Final: " << endl;
         cin >> fin;
         int n = algoritmo(comienzo, fin, graph);
         cout << "Longitud del Camino mas Corto: " << n << endl;
+
     }
 };
-
-int main()
-{
-    bool out=false;
-    char salir;
-
-    Programa programa; //TAD
-    Graph graph; // Grafo.
-
-    cout << "Algoritmo de Dijkstra en C++" << endl;
-
-    while (!out)
-    {
-        programa.definirGrafo(graph); //Se define cantidad de vertices y cantidad de aristas del grafo
-        programa.cargarGrafo(graph); //Se cargan las aristas del Grafo
-        programa.Dijkstra(graph); //Se aplica el algoritmo de Dijkstra
-
-        //Desea Salir?
-        cout << "Salir? (S/N)" << endl;
-        cin >> salir;
-        if (salir == 'S')
-        {
-            out = true;
-        }
-    }
-}

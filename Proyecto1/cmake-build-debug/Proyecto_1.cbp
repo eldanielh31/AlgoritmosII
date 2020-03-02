@@ -87,6 +87,9 @@
 		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/Grafo.cpp">
 			<Option target="Proyecto_1"/>
 		</Unit>
+		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/PruebaJSON.cpp">
+			<Option target="Proyecto_1"/>
+		</Unit>
 		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cliente.cpp">
 			<Option target="Proyecto_1"/>
 		</Unit>

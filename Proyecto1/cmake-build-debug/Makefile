@@ -150,6 +150,33 @@ Grafo.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/Grafo.cpp.s
 .PHONY : Grafo.cpp.s
 
+PruebaJSON.o: PruebaJSON.cpp.o
+
+.PHONY : PruebaJSON.o
+
+# target to build an object file
+PruebaJSON.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.o
+.PHONY : PruebaJSON.cpp.o
+
+PruebaJSON.i: PruebaJSON.cpp.i
+
+.PHONY : PruebaJSON.i
+
+# target to preprocess a source file
+PruebaJSON.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.i
+.PHONY : PruebaJSON.cpp.i
+
+PruebaJSON.s: PruebaJSON.cpp.s
+
+.PHONY : PruebaJSON.s
+
+# target to generate assembly for a file
+PruebaJSON.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.s
+.PHONY : PruebaJSON.cpp.s
+
 cliente.o: cliente.cpp.o
 
 .PHONY : cliente.o
@@ -216,6 +243,9 @@ help:
 	@echo "... Grafo.o"
 	@echo "... Grafo.i"
 	@echo "... Grafo.s"
+	@echo "... PruebaJSON.o"
+	@echo "... PruebaJSON.i"
+	@echo "... PruebaJSON.s"
 	@echo "... cliente.o"
 	@echo "... cliente.i"
 	@echo "... cliente.s"
