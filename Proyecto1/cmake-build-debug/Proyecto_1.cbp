@@ -90,10 +90,10 @@
 		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/PruebaJSON.cpp">
 			<Option target="Proyecto_1"/>
 		</Unit>
-		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cliente.cpp">
+		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/Servidor.cpp">
 			<Option target="Proyecto_1"/>
 		</Unit>
-		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/main.cpp">
+		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cliente.cpp">
 			<Option target="Proyecto_1"/>
 		</Unit>
 		<Unit filename="/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/CMakeLists.txt">

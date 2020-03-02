@@ -57,18 +57,18 @@ include CMakeFiles/Proyecto_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Proyecto_1.dir/flags.make
 
-CMakeFiles/Proyecto_1.dir/main.cpp.o: CMakeFiles/Proyecto_1.dir/flags.make
-CMakeFiles/Proyecto_1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Proyecto_1.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto_1.dir/main.cpp.o -c /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/main.cpp
+CMakeFiles/Proyecto_1.dir/Servidor.cpp.o: CMakeFiles/Proyecto_1.dir/flags.make
+CMakeFiles/Proyecto_1.dir/Servidor.cpp.o: ../Servidor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Proyecto_1.dir/Servidor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto_1.dir/Servidor.cpp.o -c /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/Servidor.cpp
 
-CMakeFiles/Proyecto_1.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/main.cpp > CMakeFiles/Proyecto_1.dir/main.cpp.i
+CMakeFiles/Proyecto_1.dir/Servidor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_1.dir/Servidor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/Servidor.cpp > CMakeFiles/Proyecto_1.dir/Servidor.cpp.i
 
-CMakeFiles/Proyecto_1.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/main.cpp -o CMakeFiles/Proyecto_1.dir/main.cpp.s
+CMakeFiles/Proyecto_1.dir/Servidor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_1.dir/Servidor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daniel/CLionProjects/AlgoritmosII/Proyecto1/Servidor.cpp -o CMakeFiles/Proyecto_1.dir/Servidor.cpp.s
 
 CMakeFiles/Proyecto_1.dir/cliente.cpp.o: CMakeFiles/Proyecto_1.dir/flags.make
 CMakeFiles/Proyecto_1.dir/cliente.cpp.o: ../cliente.cpp
@@ -111,7 +111,7 @@ CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.s: cmake_force
 
 # Object files for target Proyecto_1
 Proyecto_1_OBJECTS = \
-"CMakeFiles/Proyecto_1.dir/main.cpp.o" \
+"CMakeFiles/Proyecto_1.dir/Servidor.cpp.o" \
 "CMakeFiles/Proyecto_1.dir/cliente.cpp.o" \
 "CMakeFiles/Proyecto_1.dir/Grafo.cpp.o" \
 "CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.o"
@@ -119,7 +119,7 @@ Proyecto_1_OBJECTS = \
 # External object files for target Proyecto_1
 Proyecto_1_EXTERNAL_OBJECTS =
 
-Proyecto_1: CMakeFiles/Proyecto_1.dir/main.cpp.o
+Proyecto_1: CMakeFiles/Proyecto_1.dir/Servidor.cpp.o
 Proyecto_1: CMakeFiles/Proyecto_1.dir/cliente.cpp.o
 Proyecto_1: CMakeFiles/Proyecto_1.dir/Grafo.cpp.o
 Proyecto_1: CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.o

@@ -177,6 +177,33 @@ PruebaJSON.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/PruebaJSON.cpp.s
 .PHONY : PruebaJSON.cpp.s
 
+Servidor.o: Servidor.cpp.o
+
+.PHONY : Servidor.o
+
+# target to build an object file
+Servidor.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/Servidor.cpp.o
+.PHONY : Servidor.cpp.o
+
+Servidor.i: Servidor.cpp.i
+
+.PHONY : Servidor.i
+
+# target to preprocess a source file
+Servidor.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/Servidor.cpp.i
+.PHONY : Servidor.cpp.i
+
+Servidor.s: Servidor.cpp.s
+
+.PHONY : Servidor.s
+
+# target to generate assembly for a file
+Servidor.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/Servidor.cpp.s
+.PHONY : Servidor.cpp.s
+
 cliente.o: cliente.cpp.o
 
 .PHONY : cliente.o
@@ -204,33 +231,6 @@ cliente.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/cliente.cpp.s
 .PHONY : cliente.cpp.s
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Proyecto_1.dir/build.make CMakeFiles/Proyecto_1.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,12 +246,12 @@ help:
 	@echo "... PruebaJSON.o"
 	@echo "... PruebaJSON.i"
 	@echo "... PruebaJSON.s"
+	@echo "... Servidor.o"
+	@echo "... Servidor.i"
+	@echo "... Servidor.s"
 	@echo "... cliente.o"
 	@echo "... cliente.i"
 	@echo "... cliente.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
