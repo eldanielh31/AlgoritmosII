@@ -85,6 +85,7 @@ struct Programa{
         for (int i = 0; i < E; ++i){
 
             int Origen, Destino, Peso;
+            graph.G[Destino].push_back(Edge(Origen, Peso));
             cout << "Ingrese Origen: " << endl;
             cin >> Origen;
             cout << "Ingrese Destino: " << endl;

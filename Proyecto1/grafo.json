@@ -1,11 +1,7 @@
-{
-
-  "Grafo" : {
-
-    "Vertices" : 3,
-    "Aristas" : 3,
-    ""
-
-  }
-
+{"Anna" : {
+  "age": 18,
+  "profession": "student"},
+  "Ben" : {
+    "age" : "nineteen",
+    "profession": "mechanic"}
 }
