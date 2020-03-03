@@ -10,17 +10,16 @@
 
 using json= nlohmann::json;
 
-/*
+
 int main() {
 
-    std::ifstream grafoArchivo("grafo.json", std::ifstream::binary);
+    std::ifstream grafoArchivo("/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/grafo.json", std::ifstream::binary);
 
     json grafo;
 
     grafoArchivo >> grafo;
 
     std::cout << grafo << std::endl;
-
 
     struct sockaddr_in diServidor{};
     diServidor.sin_family = AF_INET;
@@ -47,7 +46,7 @@ int main() {
     int cliente = accept(servidor, reinterpret_cast<sockaddr *>(&direccionCliente), &tamanoDireccion);
 
     printf("Recibí una conexión en %d!!\n", cliente);
-    send(cliente, "Hola perro!", 13, 0);
+    send(cliente, "Saludos servidor", 1000, 0);
 
     //------------------------------
 
@@ -69,4 +68,3 @@ int main() {
 
     return 0;
 }
-*/

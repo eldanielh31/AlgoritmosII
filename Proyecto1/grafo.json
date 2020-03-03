@@ -1,7 +1,4 @@
-{"Anna" : {
-  "age": 18,
-  "profession": "student"},
-  "Ben" : {
-    "age" : "nineteen",
-    "profession": "mechanic"}
+{"Grafo" : {
+  "Aristas": 3,
+  "Vertices": 3}
 }

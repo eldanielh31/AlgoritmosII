@@ -16,3 +16,21 @@ nlohmann/json.hpp
 fstream
 -
 
+/home/daniel/CLionProjects/AlgoritmosII/Proyecto1/Servidor.cpp
+cstdlib
+-
+cstdio
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+json/value.h
+-
+fstream
+-
+iostream
+-
+nlohmann/json.hpp
+-
+

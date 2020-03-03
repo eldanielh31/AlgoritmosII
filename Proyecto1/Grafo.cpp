@@ -36,7 +36,7 @@ struct State
     }
 };
 
-int algoritmo(const int begin, const int end, const Graph graph)
+int Dij(const int begin, const int end, const Graph graph)
 {
     priority_queue<State> pq; // La cola de prioridad.
     vector<int> Dist(graph.V, oo); // La distancia hacia todos los vertices. Inicialmente para cada vertice su valor es infinito.
@@ -66,10 +66,10 @@ int algoritmo(const int begin, const int end, const Graph graph)
     return -1; // Si no se puede llegar al destino, retornar -1.
 }
 
-struct Programa{
+struct CrearGrafo{
     int V, E;
     int comienzo, fin;
-    void definirGrafo(Graph &graph){
+    void iniciarGrafo(Graph &graph){
 
         cout << "Ingrese Cantidad de Vertices: " << endl;
         cin >> V;
@@ -80,7 +80,7 @@ struct Programa{
         graph.E = E;
 
     }
-    void cargarGrafo(Graph &graph){
+    void cargar(Graph &graph){
 
         for (int i = 0; i < E; ++i){
 
@@ -98,14 +98,13 @@ struct Programa{
             graph.G[Destino].emplace_back(Origen, Peso);
         }
     }
-    void Dijkstra(Graph graph){
-        
-        cout << "Ingrese Vertice Inicial: " << endl;
-        cin >> comienzo;
-        cout << "Ingrese Vertice Final: " << endl;
-        cin >> fin;
-        int n = algoritmo(comienzo, fin, graph);
-        cout << "Longitud del Camino mas Corto: " << n << endl;
+    int Dijkstra(Graph graph, int Comienzo, int Fin){
+
+        Comienzo >> comienzo;
+
+        Fin >> fin;
+
+        return Dij(comienzo, fin, graph);
 
     }
 };
